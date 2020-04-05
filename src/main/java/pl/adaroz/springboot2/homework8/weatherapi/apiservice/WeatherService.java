@@ -9,7 +9,7 @@ public class WeatherService {
 
     public WeatherInfo getWeatherInfo(String cityParam) {
         RestTemplate restTemplate = new RestTemplate();
-        final String API_KEY_PARAM = "07c0c3519429b51e18c2e2e2034b6dd3";
+        final String API_KEY_PARAM = "2c9ddfaf37b04cafa226704ab7a66458";
         final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
         final String UNITS_PARAM = "metric";
         String url = BASE_URL + "?q=" + cityParam + "&units=" + UNITS_PARAM + "&appid=" + API_KEY_PARAM;

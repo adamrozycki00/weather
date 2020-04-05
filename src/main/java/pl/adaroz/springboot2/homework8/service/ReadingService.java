@@ -9,14 +9,14 @@ import pl.adaroz.springboot2.homework8.weatherapi.apiservice.WeatherService;
 import java.time.LocalDateTime;
 
 @Service
-public class TemperatureService {
+public class ReadingService {
 
     private TemperatureRepository temperatureRepository;
     private WeatherService weatherService;
 
     @Autowired
-    public TemperatureService(TemperatureRepository temperatureRepository,
-                              WeatherService weatherService) {
+    public ReadingService(TemperatureRepository temperatureRepository,
+                          WeatherService weatherService) {
         this.temperatureRepository = temperatureRepository;
         this.weatherService = weatherService;
     }
