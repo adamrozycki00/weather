@@ -1,5 +1,5 @@
 
-package pl.adaroz.springboot2.homework8.weatherapi.apiclasses;
+package pl.adaroz.springboot2.homework8.client.apiclasses;
 
 import com.fasterxml.jackson.annotation.*;
 

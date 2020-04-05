@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pl.adaroz.springboot2.homework8.model.TemperatureReading;
 import pl.adaroz.springboot2.homework8.repository.TemperatureRepository;
-import pl.adaroz.springboot2.homework8.weatherapi.apiservice.WeatherApiService;
+import pl.adaroz.springboot2.homework8.client.service.WeatherApiService;
 
 import java.time.LocalDateTime;
 
