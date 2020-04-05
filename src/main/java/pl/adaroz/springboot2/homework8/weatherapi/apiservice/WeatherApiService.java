@@ -5,7 +5,7 @@ import org.springframework.web.client.RestTemplate;
 import pl.adaroz.springboot2.homework8.weatherapi.apiclasses.WeatherInfo;
 
 @Service
-public class WeatherService {
+public class WeatherApiService {
 
     public WeatherInfo getWeatherInfo(String cityParam) {
         RestTemplate restTemplate = new RestTemplate();
