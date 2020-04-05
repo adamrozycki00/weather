@@ -1,5 +1,5 @@
 
-package pl.adaroz.springboot2.homework8.weatherapi;
+package pl.adaroz.springboot2.homework8.weatherapi.apiclasses;
 
 import com.fasterxml.jackson.annotation.*;
 
@@ -8,23 +8,23 @@ import java.util.Map;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "speed"
+    "all"
 })
-public class Wind {
+public class Clouds {
 
-    @JsonProperty("speed")
-    private Integer speed;
+    @JsonProperty("all")
+    private Integer all;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    @JsonProperty("speed")
-    public Integer getSpeed() {
-        return speed;
+    @JsonProperty("all")
+    public Integer getAll() {
+        return all;
     }
 
-    @JsonProperty("speed")
-    public void setSpeed(Integer speed) {
-        this.speed = speed;
+    @JsonProperty("all")
+    public void setAll(Integer all) {
+        this.all = all;
     }
 
     @JsonAnyGetter

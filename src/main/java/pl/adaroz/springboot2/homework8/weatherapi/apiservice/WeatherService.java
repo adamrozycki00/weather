@@ -1,8 +1,8 @@
-package pl.adaroz.springboot2.homework8.service;
+package pl.adaroz.springboot2.homework8.weatherapi.apiservice;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import pl.adaroz.springboot2.homework8.weatherapi.WeatherInfo;
+import pl.adaroz.springboot2.homework8.weatherapi.apiclasses.WeatherInfo;
 
 @Service
 public class WeatherService {
