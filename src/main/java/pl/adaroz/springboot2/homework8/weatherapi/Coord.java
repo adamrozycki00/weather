@@ -1,5 +1,5 @@
 
-package pl.adaroz.springboot2.homework8.model;
+package pl.adaroz.springboot2.homework8.weatherapi;
 
 import java.util.HashMap;
 import java.util.Map;
