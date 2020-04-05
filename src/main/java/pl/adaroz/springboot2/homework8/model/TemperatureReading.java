@@ -18,7 +18,7 @@ public class TemperatureReading {
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private LocalDateTime dateTime;
 
-    private Double reading;
+    private Double temperature;
 
     public TemperatureReading() {
     }
@@ -47,11 +47,11 @@ public class TemperatureReading {
         this.dateTime = dateTime;
     }
 
-    public Double getReading() {
-        return reading;
+    public Double getTemperature() {
+        return temperature;
     }
 
-    public void setReading(Double reading) {
-        this.reading = reading;
+    public void setTemperature(Double reading) {
+        this.temperature = reading;
     }
 }
