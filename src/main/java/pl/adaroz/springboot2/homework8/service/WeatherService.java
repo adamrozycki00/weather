@@ -17,4 +17,8 @@ public class WeatherService {
         return weatherInfo;
     }
 
+    public double getCurrentTempForCity(String city) {
+        return getWeatherInfo(city).getMain().getTemp();
+    }
+
 }
