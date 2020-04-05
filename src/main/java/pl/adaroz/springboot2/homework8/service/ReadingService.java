@@ -15,14 +15,10 @@ public class ReadingService {
     private TemperatureRepository temperatureRepository;
 
     @Autowired
-    public ReadingService(TemperatureRepository temperatureRepository,
-                          WeatherApiService weatherApiService) {
+    public ReadingService(WeatherApiService weatherApiService,
+                          TemperatureRepository temperatureRepository) {
         this.weatherApiService = weatherApiService;
         this.temperatureRepository = temperatureRepository;
-    }
-
-    public void saveReading(TemperatureReading reading) {
-        temperatureRepository.save(reading);
     }
 
     public TemperatureReading getCurrentReading(String city) {
@@ -31,6 +27,10 @@ public class ReadingService {
         reading.setDateTime(LocalDateTime.now());
         reading.setTemperature(weatherApiService.getCurrentTempForCity(city));
         return reading;
+    }
+
+    public void saveReading(TemperatureReading reading) {
+        temperatureRepository.save(reading);
     }
 
 }

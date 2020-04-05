@@ -13,8 +13,7 @@ public class WeatherApiService {
         final String API_KEY_PARAM = "2c9ddfaf37b04cafa226704ab7a66458";
         final String UNITS_PARAM = "metric";
         String url = BASE_URL + "?q=" + cityParam + "&units=" + UNITS_PARAM + "&appid=" + API_KEY_PARAM;
-        WeatherInfo weatherInfo = restTemplate.getForObject(url, WeatherInfo.class);
-        return weatherInfo;
+        return restTemplate.getForObject(url, WeatherInfo.class);
     }
 
     public double getCurrentTempForCity(String city) {
